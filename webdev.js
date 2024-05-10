@@ -72,106 +72,77 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 //section8=================
-  const prevBtn = document.getElementById('prevBtn');
-      const nextBtn = document.getElementById('nextBtn');
-      const cards = document.querySelectorAll('.session11_card');
-      let currentIndex = 0;
-      // Function to toggle previous button background color
-      function togglePrevButtonColor() {
-        if (currentIndex === 0) {
-          prevBtn.style.backgroundColor = '#ffffff'; 
-          prevBtn.style.color = '#000000';
-        } else {
-          prevBtn.style.backgroundColor = '#2CA068';
-          prevBtn.style.color = '#ffffff';
-        }
-      }
-      // Function to toggle next button state
-      function toggleNextButtonState() {
-        if (currentIndex >= cards.length - 4) {
-          nextBtn.disabled = true;
-          nextBtn.style.backgroundColor = '#ffffff';
-          nextBtn.style.color = '#000000'; 
-        } else {
-          nextBtn.disabled = false;
-          nextBtn.style.backgroundColor = '#2CA068';
-          nextBtn.style.color = '#ffffff'; 
-        }
-      }
-      togglePrevButtonColor();
-      toggleNextButtonState();
-    
-      prevBtn.addEventListener('click', () => {
-        console.log(currentIndex,'currentIndex------i-->');
-        if (currentIndex > 0) {
-          console.log(currentIndex,'currentIndex-------p->');
-          cards[currentIndex + 3].classList.add('hidden-card');
-          cards[currentIndex - 1].classList.remove('hidden-card');
-          currentIndex--;
-        }
-        togglePrevButtonColor(); 
-        toggleNextButtonState();
-      });
-    
-      nextBtn.addEventListener('click', () => {
-        if (currentIndex < cards.length - 4) {
-          console.log(currentIndex,'currentIndex-------n->');
-          cards[currentIndex].classList.add('hidden-card');
-          cards[currentIndex + 4].classList.remove('hidden-card');
-          currentIndex++;
-          console.log(currentIndex,'currentIndex-------l->');
-        }
-        togglePrevButtonColor(); 
-        toggleNextButtonState();
-      });
-    const prevBtnbotton = document.querySelectorAll('#prevBtnbotton');
-  const nextBtnbottom = document.querySelectorAll('#nextBtnbottom');
-  function togglePrevButtonColor() {
-      if (currentIndex === 0) {
-        prevBtn.style.backgroundColor = '#ffffff'; 
-        prevBtn.style.color = '#000000';
-      } else {
-        prevBtn.style.backgroundColor = '#2CA068';
-        prevBtn.style.color = '#ffffff';
-      }
-    }
-    // Function to toggle next button state
-    function toggleNextButtonState() {
-      if (currentIndex >= cards.length - 4) {
-        nextBtn.disabled = true;
-        nextBtn.style.backgroundColor = '#ffffff';
-        nextBtn.style.color = '#000000'; 
-      } else {
-        nextBtn.disabled = false;
-        nextBtn.style.backgroundColor = '#2CA068';
-        nextBtn.style.color = '#ffffff'; 
-      }
-    }
-    togglePrevButtonColor();
-    toggleNextButtonState();
-  prevBtnbotton.forEach(btn => {
-    btn.addEventListener('click', () => {
-      if (currentIndex > 0) {
-        cards[currentIndex].classList.add('hidden-card');
-        cards[currentIndex - 1].classList.remove('hidden-card');
-        currentIndex--;
-      }
-      togglePrevButtonColor(); 
-      toggleNextButtonState();
-    });
-  });
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const prevBtnbottom = document.getElementById('prevBtnbotton');
+const nextBtnbottom = document.getElementById('nextBtnbottom');
+const cards = document.querySelectorAll('.session11_card');
+let currentIndex = 0;
+let visibleCardCount = calculateVisibleCardCount();
 
-  nextBtnbottom.forEach(btn => {
-    btn.addEventListener('click', () => {
-      if (currentIndex < cards.length - 1) {
-        cards[currentIndex].classList.add('hidden-card');
-        cards[currentIndex + 1].classList.remove('hidden-card');
-        currentIndex++;
-      }
-      togglePrevButtonColor(); 
-      toggleNextButtonState();
+function calculateVisibleCardCount() {
+    // Determine the number of visible cards based on the screen size
+    return window.innerWidth <= 768 ? 1 : 4;
+}
+
+function toggleButtonsState() {
+    prevBtn.disabled = currentIndex === 0;
+    nextBtn.disabled = currentIndex >= cards.length - visibleCardCount;
+    prevBtnbottom.disabled = currentIndex === 0;
+    nextBtnbottom.disabled = currentIndex >= cards.length - visibleCardCount;
+}
+
+function showCurrentCards() {
+    // Hide all cards and display only the ones within the visible range
+    cards.forEach((card, index) => {
+        if (index >= currentIndex && index < currentIndex + visibleCardCount) {
+            card.classList.remove('hidden-card');
+        } else {
+            card.classList.add('hidden-card');
+        }
     });
-  });
+}
+
+function updateUI() {
+    visibleCardCount = calculateVisibleCardCount();
+    toggleButtonsState();
+    showCurrentCards();
+}
+
+// Initial setup
+updateUI();
+
+// Event listeners for navigation buttons
+prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateUI();
+    }
+});
+
+nextBtn.addEventListener('click', () => {
+    if (currentIndex < cards.length - visibleCardCount) {
+        currentIndex++;
+        updateUI();
+    }
+});
+
+prevBtnbottom.addEventListener('click', () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateUI();
+    }
+});
+
+nextBtnbottom.addEventListener('click', () => {
+    if (currentIndex < cards.length - visibleCardCount) {
+        currentIndex++;
+        updateUI();
+    }
+});
+
+// Update UI on window resize
+window.addEventListener('resize', updateUI);
 
 
 
@@ -359,29 +330,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-  document.addEventListener("DOMContentLoaded", function () {
-    // Get all footer columns
-    var footerColumns = document.querySelectorAll('#footer-column');
+ document.addEventListener("DOMContentLoaded", function () {
+      // Get all footer columns
+      var footerColumns = document.querySelectorAll('#footer-column');
 
-    // Loop through each footer column
-    footerColumns.forEach(function (column) {
-        // Find the h3 element
-        var h3 = column.querySelector('#footer-head');
+      // Loop through each footer column
+      footerColumns.forEach(function (column) {
+          // Find the h3 element
+          var h3 = column.querySelector('#footer-head');
 
-        // Find the ul element
-        var menu = column.querySelector('#footer-menu');
+          // Find the ul element
+          var menu = column.querySelector('#footer-menu');
 
-        // Add click event listener to the icon
-        h3.addEventListener('click', function () {
-            // Toggle the active class on the menu when the icon is clicked
-            menu.classList.toggle('active');
+          // Add click event listener to the icon
+          h3.addEventListener('click', function () {
+              // Toggle the active class on the menu when the icon is clicked
+              menu.classList.toggle('active');
 
-            // Toggle the icon between chevron-down and chevron-up
-            h3.querySelector('i').classList.toggle('bi-chevron-down');
-            h3.querySelector('i').classList.toggle('bi-chevron-up');
-        });
-    });
-});
+              // Toggle the icon between chevron-down and chevron-up
+              h3.querySelector('i').classList.toggle('bi-chevron-down');
+              h3.querySelector('i').classList.toggle('bi-chevron-up');
+          });
+      });
+  });
 
 
 
