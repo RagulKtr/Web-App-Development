@@ -1968,6 +1968,7 @@ text-align: left;
     border-radius: 12px;
     flex: 0 0 auto;
     margin-right: 30px; 
+    width: 100%;
   }
   .hidden-card {
     display: none;
@@ -1979,6 +1980,7 @@ text-align: left;
     .mobile_session_row{
       padding: 30px 0px ;
     }
+    
     .text_color::after {
       content: '';
       position: absolute;
@@ -2034,9 +2036,14 @@ text-align: left;
     .mobile_session_icon_bottom {
       display: block;
     }
-    
-    
   }
+  /* Adjustments for larger screens */
+@media only screen and (min-width: 769px) {
+  .session11_card {
+      flex: 0 0 calc(25% - 30px); /* Adjust the width based on the number of cards */
+  }
+}
+
 
   /*section10===================================================*/
 
