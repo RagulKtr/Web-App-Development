@@ -157,6 +157,7 @@ text-align: left;
   line-height: 22.63px;
   text-align: left;
   color: rgba(255, 255, 255, 1);
+  border: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -165,6 +166,11 @@ text-align: left;
     justify-content: center;
     align-items: center;
   }
+  .nav-logo {
+    width: 140px !important;
+    height: 30px !important;
+  }
+  
   .Web-Development-Service-col1 {
     text-align: center;
   }
@@ -268,8 +274,8 @@ text-align: left;
 }
 
 .Web-Development-Service-card1{
-  width: 215px;
-  height: 301px;
+  width: 205px !important;
+  height: 290px;
   gap: 0px;
   opacity: 0px;
   background: rgba(255, 255, 255, 1);
@@ -277,8 +283,8 @@ text-align: left;
 }
 
 .Web-Development-Service-card2{
-  width: 215px;
-  height: 301px;
+  width: 205px !important;
+  height: 290px;
   gap: 0px;
   opacity: 0px;
   background: rgba(255, 255, 255, 1);
@@ -287,8 +293,8 @@ text-align: left;
   
 }
 .Web-Development-Service-card3{
-  width: 215px;
-  height: 301px;
+  width: 205px !important;
+  height: 290px;
   gap: 0px;
   opacity: 0px;
   background: rgba(255, 255, 255, 1);
@@ -297,18 +303,17 @@ text-align: left;
   
 }
 .Web-Development-Service-card4{
-  width: 215px;
-  height: 301px;
+  width: 205px !important;
+  height: 290px;
   gap: 0px;
   opacity: 0px;
   background: rgba(255, 255, 255, 1);
   border: 1px solid rgba(233, 233, 233, 1);
   margin-left: 105px;
-  
 }
 .Web-Development-Service-card5{
-  width: 215px;
-  height: 301px;
+  width: 205px !important;
+  height: 290px;
   gap: 0px;
   opacity: 0px;
   background: rgba(255, 255, 255, 1);
@@ -319,7 +324,7 @@ text-align: left;
 .Web-Development-Service-card-line{
   width: 132px;
   height: 0px;
-  margin-top: 18px;
+  margin-top: 15px;
   margin-left: 12px;
   gap: 0px;
   border: 2px;
@@ -331,7 +336,7 @@ text-align: left;
   margin-top: 110px;
   margin-left: 12px;
   font-family: 'Source Sans Pro',sans-serif;
-  font-size: 23px;
+  font-size: 22px;
   font-weight: 600;
   line-height: 30.17px;
   text-align: left;
@@ -348,7 +353,7 @@ text-align: left;
   text-align: left;
   width: 100%;
   height: auto;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-left: 15px;
   gap: 0px;
   opacity: 0px;
@@ -432,7 +437,7 @@ text-align: left;
   .Web-Development-Service-card-body p {
       display: block;
   }
-  .Web-Development-Service-cardslayout2{
+  .Web-Development-Service-cardslayout2 {
     width: 100% !important;
     align-items: center;
     justify-content: center;
@@ -475,35 +480,35 @@ text-align: left;
 
   
   .Web-Development-Service-card1  {
-      width: 100%; /* Adjust margin as needed */
+      width: 100% !important; /* Adjust margin as needed */
       margin-left: 0;
       height: auto;
       border: 2px solid rgba(233, 233, 233, 1);
       padding: 10px;
   }
   .Web-Development-Service-card2  {
-      width: 100%; /* Adjust margin as needed */
+      width: 100% !important; /* Adjust margin as needed */
       margin-left: 0;
       height: auto;
       border: 2px solid rgba(233, 233, 233, 1);
       padding: 10px;
   }
   .Web-Development-Service-card3  {
-      width: 100%; /* Adjust margin as needed */
+      width: 100% !important; /* Adjust margin as needed */
       margin-left: 0;
       height: auto;
       border: 2px solid rgba(233, 233, 233, 1);
       padding: 10px;
   }
   .Web-Development-Service-card4  {
-      width: 100%; /* Adjust margin as needed */
+      width: 100% !important; /* Adjust margin as needed */
       margin-left: 0;
       height: auto;
       border: 2px solid rgba(233, 233, 233, 1);
       padding: 10px;
   }
   .Web-Development-Service-card5  {
-      width: 100%; /* Adjust margin as needed */
+      width: 100% !important; /* Adjust margin as needed */
       margin-left: 0;
       height: auto;
       border: 2px solid rgba(233, 233, 233, 1);
@@ -888,7 +893,7 @@ text-align: left;
   .Development-Methodologies-col1{
     width: 100%;
     height: auto;
-    margin-top: 30px;
+    margin-top: 10px;
   }
   .centered-col {
     display: flex;
@@ -912,7 +917,7 @@ text-align: left;
     text-align: left;
     width: 100%;
     color: rgba(44, 160, 104, 1);
-    
+    margin-top: 55px;
   }
   .methodologiesline{
     width: 182px;
@@ -2982,29 +2987,29 @@ text-align: left;
   .Our-Developers-firstcollayout{
     width: 100%;
     height: auto;
-    margin-top: 92px;
   }
   .Our-Developers-heading{
     width: 100%;
-    height: 318px;
+    height: auto;
     gap: 0px;
     opacity: 0px;
     font-family: 'Source Sans Pro',sans-serif;
-    font-size: 48px;
+    font-size: 44px;
     font-weight: 600;
     line-height: 68px;
     text-align: left;
     color: rgba(0, 0, 0, 1);
+    margin-top: 30px;
   }
   .Our-Developers-secondcollayout{
     background: rgba(22, 22, 22, 1);
     border-radius: 12px;
-    height: auto;
+    height: 455px !important;
     margin-left: 90px !important;
-    width: 670px;
+    width: 100% !important;
   }
   .Our-Developers-heading span{
-    font-size: 48px;
+    font-size: 45px;
     font-weight: 700;
     line-height: 68px;
     text-align: left;
@@ -3016,7 +3021,7 @@ text-align: left;
   .Our-Developers-firstcollink{
     width: 100%;
     height: auto;
-    margin-top: 45px;
+    margin-top: 65px;
     gap: 0px;
     opacity: 0px;
     color: rgba(44, 160, 104, 1);
@@ -3038,6 +3043,7 @@ text-align: left;
     opacity: 0px;
     border: 2px solid rgba(44, 160, 104, 1)
   }
+ 
   
   .Our-Developers-col2firstrow .col-md-2 {
     width: 20%; /* Each column takes up 20% of the row */
@@ -3049,11 +3055,17 @@ text-align: left;
     gap: 0px;
     opacity: 0px;
     margin-top: 40px; /* Adjust as needed */
+    margin-left: 15px;
+    
   }
   .check{
-  margin-top: 90px !important;
-  margin-left: 75px !important;
-  padding: 5px;
+    align-items: center !important;
+    justify-content: center !important;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 60px;
   }
   .image1,
   .image2,
@@ -3070,7 +3082,10 @@ text-align: left;
   .image13,
   .image14,
   .image15 {
-    width: 100px !important;
+    width: 90px !important;
+    height: 78px !important;
+    gap: 0px;
+    opacity: 0px;
   }
   .Our-Developers-firstcollink1{
   display: none;
@@ -3082,6 +3097,36 @@ text-align: left;
   
   
   @media (max-width: 728px) {
+    .image1,
+  .image2,
+  .image3,
+  .image4,
+  .image5,
+  .image6,
+  .image7,
+  .image8,
+  .image9,
+  .image10,
+  .image11,
+  .image12,
+  .image13,
+  .image14,
+  .image15 {
+    width: 62px !important;
+    height: 57px !important;
+    gap: 0px;
+    opacity: 0px;
+
+  }
+  .Our-Developers-col2firstrow .col-md-2 img {
+    width: 100%;
+    height: auto;
+    gap: 0px;
+    opacity: 0px;
+    margin-top: 20px; /* Adjust as needed */
+    margin-left: 0px;
+    
+  }
     .Our-Developers-heading{
   
   font-size: 32px;
@@ -3115,11 +3160,12 @@ text-align: left;
   margin-top: -100px !important;
     }
     .Our-Developers-secondcollayout{
-      margin-top: -200px !important;
+      margin-top: -40px;
       margin-left: 0px !important;
+      height: auto !important;
     }
     .check{
-      margin-top: 0px !important;
+      margin-top: 10px !important;
       margin-left: 0px !important;
       padding-bottom: 40px !important;
       
@@ -3589,6 +3635,11 @@ text-align: left;
       margin-bottom: 30px;
     }
     
+    .form-control:focus {
+      border-color: #2CA068 !important;
+      box-shadow: none !important;
+      -webkit-box-shadow: none;
+    }
     .form-paragraph {
       width: 100%;
       font-size: 16px;
