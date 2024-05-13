@@ -787,7 +787,7 @@ text-align: left;
 .custom-check-circle{
   color: #2CA068;
 }
-.Engagement-Models-cardlist{
+.Engagement-Models-cardlist p{
   width: 100%;
   font-family: 'Source Sans Pro',sans-serif;
   font-size: 16px;
@@ -795,6 +795,7 @@ text-align: left;
   line-height: 20.11px;
   text-align: left;
   color: rgba(103, 105, 104, 1);
+  margin-top: 3px;
 }
 .Engagement-Models-cardlist li {
   margin-bottom: 10px; /* Adjust the margin as needed */
@@ -845,12 +846,13 @@ text-align: left;
       text-align: left;
       width: 100%;
   }
-  .Engagement-Models-cardlist{
+  .Engagement-Models-cardlist p{
       width: 100% !important;
       font-size: 12px;
       font-weight: 400;
       line-height: 15.08px;
       text-align: left;
+      margin-top: 4px !important;
   }
   .Engagement-Models-button .btn-primary{
       width: 145px;
@@ -3056,44 +3058,46 @@ text-align: left;
   .image-column{
       margin-left: 10%;
   }
-  .nested-content-up{
+  /* .nested-content-up{
       width: 30px;
-      height: 28px;
+      height: 20px !important;
       gap: 0px;
       opacity: 0px;
       background: rgba(255, 255, 255, 1);
       box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
-      border-radius: 50%;
+      border-radius: 50% !important;
       text-align: center;
       font-size: 18px;
       padding: 8px;
       margin-left: 3px;
       margin-right: 3px;
-  }
-  .nested-content-up:hover{
+  } */
+  /* .nested-content-up:hover{
       background-color: green;
       color: white;
   }
   .nested-content-down:hover{
       background-color: green;
       color: white;
-  }
-  
+  } */
+/*   
   .nested-content-down{
       width: 30px;
-      height: 28px;
+      height: 30px;
       gap: 0px;
       opacity: 0px;
       background: rgba(255, 255, 255, 1);
       box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
-      border-radius: 50%;
+      border-radius: 50% !important;
       text-align: center;
       padding: 8px;
       margin-left: 3px;
       margin-right: 3px;
       font-size: 18px;
       
-  }
+  } */
+
+
   .Technical-Expertise-firstrow{
       padding-top: 40px;
   }
@@ -3127,14 +3131,17 @@ text-align: left;
       color: rgba(44, 160, 104, 1);
       margin-top: 60px;
   }
-  .Technical-Expertise-col1 hr{
-      width: 305px;
-      height: 0px;
-      margin-left: 0;
-      margin-top: -10px;
-      border: 2px solid rgba(44, 160, 104, 1);
+  /* .Technical-Expertise-col1 hr {
+         width: 304px;
+        height: 0px;
+        margin-top: -10px;
+        border: 3px;
+        opacity: 0px;
+        border: 2px solid rgb(50, 189, 122) !important;
+  } */
+  .mobile_session_underline{
+    display: none;
   }
-  
   .Technical-Expertise-mobileview{
       display: none;
   }
@@ -3151,10 +3158,35 @@ text-align: left;
   .technologies-mobileview-hr{
      display: none;
   }
+  .nested-content-icons button{
+    width: 31px;
+    height: 31px;
+    left: 28px;
+    gap: 0px;
+    opacity: 0px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+  }
+  
+  .nested-content-icons button:hover{
+    background-color: #2CA068;
+  }
+  .nested-content-icons i:hover{
+    color: white;
+  }
   @media screen and (max-width: 767px){
       .Leverage-Technical-Expertise-Developers{
           width: 100%;
           margin-top: 10px;
+      }
+      .web_session_underline{
+        display: none;
+      }
+      .mobile_session_underline{
+        display: block;
       }
       .black-box-Technical-Expertise{
       width: 100%;
@@ -3178,7 +3210,7 @@ text-align: left;
       margin-left: 22px;
       margin-top: -10px;
   }
-  .nested-content-down{
+  /* .nested-content-down{
       width: 26px;
       height: 26px;
       gap: 0px;
@@ -3191,14 +3223,14 @@ text-align: left;
       font-size: 15px;
       padding: 3px;
       margin-top: -4px;
-  }
+  } */
   .image-column{
       padding-left: 30px;
       padding-right: 30px;
       margin-left: 0;
       margin-top: 25px;
   }
-  .nested-content-up{
+  /* .nested-content-up{
       width: 26px;
       height: 26px;
       gap: 0px;
@@ -3211,14 +3243,34 @@ text-align: left;
       padding: 3px;
       margin-left: -8px !important;
       margin-top: -4px !important;
+  } */
+  .nested-content-icons{
+    display: flex;
+    margin-left: -20px;
+  }
+  .nested-content-icons button{
+    width: 28px;
+    height: 28px;
+    left: 28px;
+    gap: 0px;
+    opacity: 0px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+  }
+  
+  .nested-content-icons button:hover{
+    background-color: #2CA068;
+  }
+  .nested-content-icons i:hover{
+    color: white;
   }
   .Technical-Expertise-mobileview{
       margin-top: 10px;
   }
-  .nested-content-icons{
-     margin-left: -5px !important;
-     padding-right: 10px;
-  }
+  
   .Technical-Expertise-col1{
       margin-top: 0;
   }
@@ -3276,6 +3328,9 @@ text-align: left;
   .Technical-Expertise-mobileview{
       display: block;
   }
+  
+
+
 }
   /*section11*/
 
