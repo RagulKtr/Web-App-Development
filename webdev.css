@@ -660,6 +660,9 @@ text-align: left;
 .Why-Choose-Us-background{
   margin-top: 80px;
 }
+.Why-Choose-Us-col2{
+  margin-left: -10px !important;
+}
   .Why-Choose-Us-maindiv{
       width: 100%;
       height: auto;
@@ -672,6 +675,8 @@ text-align: left;
       font-weight: 600;
       line-height: 40.22px;
       text-align: left;
+      /* margin-left: -4px; */
+      padding-left: 0;
   }
   .Why-Choose-Us-heading span{
       font-size: 30px;
@@ -689,12 +694,14 @@ text-align: left;
       line-height: 20.11px;
       text-align: left;
   }
+  
   .Why-Choose-Us-sideheadingpara{
       width: 100%;
       font-size: 12px;
       font-weight: 400;
       line-height: 20px;
       text-align: left;
+      padding-left: 0 !important;
   }
   .Why-Choose-Us-insideheading{
     font-size: 16px
@@ -1504,6 +1511,7 @@ text-align: left;
   .mainrowsection7{
     margin-top: 15px;
   }
+  
   .section7heading{
     width: 100%;
     font-size: 32px;
@@ -1581,28 +1589,29 @@ text-align: left;
   }
   .bigdataheading{
     width: 100%;
-    font-size: 14px;
+    font-size: 13.5px;
     font-weight: 600;
     line-height: 17.6px;
     text-align: center;
   }
   .AI-Machineheading{
     width: 100%;
-    font-size: 14px;
+    font-size: 13.5px;
     font-weight: 600;
     line-height: 17.6px;
     text-align: center;
+    padding: auto;
   }
   .Block-Chainheading{
     width: 100%;
-    font-size: 14px;
+    font-size: 13.5px;
     font-weight: 600;
     line-height: 17.6px;
     text-align: center;
   }
   .Data-Scienceheading{
     width: 100%;
-    font-size: 14px;
+    font-size: 13.5px;
     font-weight: 600;
     line-height: 17.6px;
     text-align: center;
@@ -2359,7 +2368,6 @@ text-align: left;
     gap: 0px;
     border-radius: 50px;
     opacity: 0px;
-
   }
   .about_session10_span {
     font-family: 'Source Sans Pro',sans-serif;
@@ -2500,8 +2508,10 @@ text-align: left;
     width: 100%;
   }
   
+  
   @media only screen and (max-width: 768px) {
     .about_session10_para1 {
+      width: 100%;
       font-size: 32px;
       text-align: left;
       /* margin-left: 90px; */
@@ -3043,7 +3053,7 @@ text-align: left;
       margin-left: 65px;
   }
   .black-box-Technical-Expertise{
-      width: 804px;
+      width: 750px;
       height: 503px;
       gap: 0px;
       border-radius: 12px;
@@ -4046,6 +4056,8 @@ text-align: left;
   .footer-text1,
   .footer-text2 {
     font-size: 14px;
+    color: #706E72;
+
   }
   
   .footer-menu {
