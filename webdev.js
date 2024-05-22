@@ -330,73 +330,90 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
- document.addEventListener("DOMContentLoaded", function () {
-      // Get all footer columns
-      var footerColumns = document.querySelectorAll('#footer-column');
-
-      // Loop through each footer column
-      footerColumns.forEach(function (column) {
-          // Find the h3 element
-          var h3 = column.querySelector('#footer-head');
-
-          // Find the ul element
-          var menu = column.querySelector('#footer-menu');
-
-          // Add click event listener to the icon
-          h3.addEventListener('click', function () {
-              // Toggle the active class on the menu when the icon is clicked
-              menu.classList.toggle('active');
-
-              // Toggle the icon between chevron-down and chevron-up
-              h3.querySelector('i').classList.toggle('bi-chevron-down');
-              h3.querySelector('i').classList.toggle('bi-chevron-up');
-          });
-      });
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get all footer columns
+    var footerColumns = document.querySelectorAll('.footer-column');
+    var currentOpenMenu = null;
+  
+    // Loop through each footer column
+    footerColumns.forEach(function (column) {
+        // Find the h3 element
+        var h3 = column.querySelector('h3');
+  
+        // Find the ul element
+        var menu = column.querySelector('ul');
+  
+        // Add click event listener to the icon
+        h3.addEventListener('click', function () {
+            // If there's an open menu and it's not the current one, close it
+            if (currentOpenMenu && currentOpenMenu !== menu) {
+                currentOpenMenu.classList.remove('active');
+                currentOpenMenu.previousElementSibling.querySelector('i').classList.add('bi-chevron-down');
+                currentOpenMenu.previousElementSibling.querySelector('i').classList.remove('bi-chevron-up');
+            }
+  
+            // Toggle the active class on the menu when the icon is clicked
+            menu.classList.toggle('active');
+  
+            // Toggle the icon between chevron-down and chevron-up
+            h3.querySelector('i').classList.toggle('bi-chevron-down');
+            h3.querySelector('i').classList.toggle('bi-chevron-up');
+  
+            // Update the current open menu
+            currentOpenMenu = menu.classList.contains('active') ? menu : null;
+        });
+    });
   });
 
 
 
 // script.js
 // script.js
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const accordionHeaders = document.querySelectorAll('.accordion-header');
-
+  let currentOpenAccordion = null;
+  
   accordionHeaders.forEach(header => {
-      header.addEventListener('click', function() {
+      header.addEventListener('click', function () {
           const accordionItem = this.parentElement;
           const accordionContent = accordionItem.querySelector('.accordion-content');
           const accordionToggle = accordionItem.querySelector('.accordion-toggle').querySelector('.arrow');
-
+  
+          // If there's an open accordion and it's not the current one, close it
+          if (currentOpenAccordion && currentOpenAccordion !== accordionItem) {
+              const openContent = currentOpenAccordion.querySelector('.accordion-content');
+              const openToggle = currentOpenAccordion.querySelector('.accordion-toggle .arrow');
+  
+              openContent.style.display = 'none';
+              openToggle.classList.remove('up');
+              openToggle.classList.add('down');
+  
+              // Remove active class and reset styles for the previously open accordion header
+              currentOpenAccordion.querySelector('.accordion-header').classList.remove('active');
+              openToggle.classList.remove('white');
+              currentOpenAccordion.querySelector('.accordion-header').classList.remove('white');
+          }
+  
+          // Toggle the current accordion content and arrow
           if (accordionContent.style.display === 'block') {
               accordionContent.style.display = 'none';
               accordionToggle.classList.remove('up');
               accordionToggle.classList.add('down');
+              this.classList.remove('active');
+              accordionToggle.classList.remove('white');
+              this.classList.remove('white');
+  
+              currentOpenAccordion = null;
           } else {
               accordionContent.style.display = 'block';
               accordionToggle.classList.remove('down');
               accordionToggle.classList.add('up');
+              this.classList.add('active');
+              accordionToggle.classList.add('white');
+              this.classList.add('white');
+  
+              currentOpenAccordion = accordionItem;
           }
       });
   });
-});
-
-// script.js
-document.addEventListener('DOMContentLoaded', function() {
-  const accordionItems = document.querySelectorAll('.accordion-header');
-
-  accordionItems.forEach(item => {
-      item.addEventListener('click', function() {
-          // Toggle active class on the clicked accordion item
-          this.classList.toggle('active');
-          
-          // Toggle arrow color
-          const accordionToggle = this.querySelector('.accordion-toggle').querySelector('.arrow');
-          accordionToggle.classList.toggle('white');
-
-          // Toggle text color
-          const accordionHeader = this.querySelector('.accordion-header');
-          accordionHeader.classList.toggle('white');
-      });
   });
-});
-
