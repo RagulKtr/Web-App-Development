@@ -242,6 +242,7 @@
       line-height: 20.11px;
       text-align: center;
       margin-top: 20px;
+      height: 36px;
   }
 }
 
@@ -925,12 +926,12 @@
   }
   .Engagement-Models-button .btn-primary{
       width: 145px;
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 700;
-      line-height: 25.14px;
+      line-height: 25px;
       text-align: center;
-      padding: 10px;
-      
+      padding: 10px, 20px, 10px, 20px;
+      /* height: 42px; */
   }
   
 }
@@ -1246,14 +1247,14 @@
 
 }
 /*section 7=============================================*/
-.section7layout{
+.Emerging-trends-maindiv{
     width: 100%;
     margin-top: 108px;
 }
-.section7header{
+.Emerging-trends-header{
     width: 100%;
 }
-.section7heading{
+.Emerging-trends-heading{
     width: 100%;
     font-family: 'Source Sans Pro',sans-serif;
     font-size: 48px;
@@ -1262,24 +1263,24 @@
     text-align: left;
     color: rgba(0, 0, 0, 1);
 }
-.section7heading span{
+.Emerging-trends-heading span{
     font-size: 48px;
     font-weight: 700;
     line-height: 60.34px;
     text-align: left;
     color: rgba(44, 160, 104, 1);
 }
-.section7heading img{
+.Emerging-trends-heading img{
     width: 54px;
     height: 3px;
     gap: 0px;
     border-radius: 50px; 
 }
-.section7col1{
+.Emerging-trends-col1{
     width: 100%;
     margin-top: 60px;
 }
-.section7sideheading{
+.Emerging-trends-sideheading{
     width: 100%;
     font-family: 'Source Sans Pro',sans-serif;
     font-size: 24px;
@@ -1288,7 +1289,7 @@
     text-align: left;
     color: rgba(0, 0, 0, 1);
 }
-.section7sidepara{
+.Emerging-trends-sidepara{
     width: 100%;
     font-family: 'Source Sans Pro',sans-serif;
     font-size: 14px;
@@ -1392,12 +1393,12 @@
 }
 
 /*mobile*/
-.section7col2layout1{
+.Emerging-trends-col2{
   width: 100%;
   height: auto;
   margin-top: 50px;
 }
-.mainrowsection7{
+.Emerging-trends-mainrow{
   margin-top: 20px;
 }
 .bigdatarow{
@@ -1567,14 +1568,14 @@
   height: 100%;
 }
 @media (max-width: 768px){
-  .section7header{
+  .Emerging-trends-header{
     width: 100%;
   }
-  .mainrowsection7{
+  .Emerging-trends-mainrow{
     margin-top: 15px;
   }
   
-  .section7heading{
+  .Emerging-trends-heading{
     width: 100%;
     font-size: 32px;
     font-weight: 600;
@@ -1582,25 +1583,25 @@
     text-align: left;
     margin-top: 0;
   }
-  .section7heading span{
+  .Emerging-trends-heading span{
     font-size: 32px;
     font-weight: 700;
     line-height: 40.22px;
     text-align: left;
     margin-top: 0;
   }
-  .section7heading img{
+  .Emerging-trends-heading img{
     width: 25px;
   }
-  .section7layout{
+  .Emerging-trends-maindiv{
     margin-top: 20px;
     width: 100%;
   }
-  .section7col1{
+  .Emerging-trends-col1{
     margin-top: 0;
     width: 100%;
   }
-  .section7sideheading{
+  .Emerging-trends-sideheading{
     width: 100%;
     font-size: 18px;
     font-weight: 600;
@@ -1608,7 +1609,7 @@
     text-align: left;
     margin-top: 18px;
   }
-  .section7sidepara{
+  .Emerging-trends-sidepara{
     width: 100%;
     font-size: 12px;
     font-weight: 400;
@@ -1617,7 +1618,7 @@
     margin-top: 20px;
     margin-bottom: 30px;
   }
-  .section7col2layout1{
+  .Emerging-trends-col2{
     margin-top: 0;
     width: 100%;
   }
@@ -1725,7 +1726,7 @@
 }
 
 /*section 8=====================================================================*/
-.webapp_section_8_layout{
+.WebDevelopment-benefits-maindiv{
   width: 100%;
   height: auto;
   background: linear-gradient(105.88deg, #2CA068 1.21%, #23899C 95.23%);
@@ -1743,7 +1744,7 @@
   position: absolute;
 }
 
-.webapp_section_8_topellipse{
+.WebDevelopment-benefits-topellipse{
   width: 111px;
   height: 111px;
   margin-top: 46px;
@@ -1753,7 +1754,7 @@
   position: absolute;
 }
 
-.webapp_section_8_ellipse207{
+.WebDevelopment-benefits-ellipse207{
   width: 85px;
   height: 85px;
   margin-top: 585px;
@@ -1763,7 +1764,7 @@
   opacity: 0px;
   position: absolute;
 }
-.webapp_section_8_ellipse206{
+.WebDevelopment-benefits-ellipse206{
   width: 115px;
   height: 115px;
   margin-top: 550px;
@@ -1772,13 +1773,13 @@
   opacity: 0px;
   position: absolute;
 }
-.webapp_section_8_ellipse204{
+.WebDevelopment-benefits-ellipse204{
   height: 77px;
   width: 77px;
   margin-left: 650px;
   margin-bottom: -420px !important;
 }
-.webapp_section_8_ellipse205{
+.WebDevelopment-benefits-ellipse205{
   height: 51px;
   width: 51px;
   margin-left: 700px;
@@ -1811,10 +1812,10 @@
   position: absolute;
 }
 
-.webapp_section_8_mainheading{
+.WebDevelopment-benefits-mainheading{
   padding-top: 40px;
 }
-.webapp_section_8_webdev{
+.WebDevelopment-benefits-webdev{
   font-size: 48px;
   font-weight: 700;
   line-height: 60.34px;
@@ -1822,7 +1823,7 @@
   color: rgba(0, 0, 0, 1);
   position: relative;
 }
-.webapp_section_8_webdevbenefits::after {
+.WebDevelopment-benefits-webdevbenefits::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -1835,7 +1836,7 @@
 .webapp_section_8_rectangle_line{
   display: none;
 }
-.webapp_section_8_webdevbenefits{
+.WebDevelopment-benefits-webdevbenefits{
   font-size: 48px;
   font-weight: 700;
   line-height: 60.34px;
@@ -1848,11 +1849,11 @@
   width: 350px;
   gap: 0px;
 }
-.webapp_section_8_center1{
+.WebDevelopment-benefits-center1{
   display: none;
 }
 
-.webapp_section_8_right{
+.WebDevelopment-benefit-right{
   margin-top: 100px;
   /* gap: 32px; */
 }
@@ -1883,7 +1884,7 @@
   opacity: 0px;
 }
 
-.webapp_section_8_leftsideheading{
+.WebDevelopment-benefit-leftsideheading{
   gap: 0px;
   opacity: 0px;
   font-size: 18px !important;
@@ -1898,7 +1899,7 @@
   margin-bottom: 5px;
 }
 
-.webapp_section_8_leftsidepara{
+.WebDevelopment-benefit-leftsidepara{
   margin-top: -15px;
   margin-left: 29px;
   gap: 0px;
@@ -1910,32 +1911,32 @@
 }
 
 @media (max-width: 768px) {
-  .webapp_section_8_layout .webapp_section_8_topellipse,
-  .webapp_section_8_layout .webapp_section_8_ellipse207,
-  .webapp_section_8_layout .webapp_section_8_ellipse206 ,
-  .webapp_section_8_layout .webapp_section_8_ellipse203,
-  .webapp_section_8_layout .webapp_section_8_ellipse204,
-  .webapp_section_8_layout .webapp_section_8_ellipse205,
-  .webapp_section_8_layout .webapp_section_8_shape_image{
+  .WebDevelopment-benefits-maindiv .WebDevelopment-benefits-topellipse,
+  .WebDevelopment-benefits-maindiv .WebDevelopment-benefits-ellipse207,
+  .WebDevelopment-benefits-maindiv .WebDevelopment-benefits-ellipse206 ,
+  .WebDevelopment-benefits-maindiv .webapp_section_8_ellipse203,
+  .WebDevelopment-benefits-maindiv .WebDevelopment-benefits-ellipse204,
+  .WebDevelopment-benefits-maindiv .WebDevelopment-benefits-ellipse205,
+  .WebDevelopment-benefits-maindiv .webapp_section_8_shape_image{
     display: none;
   }
   .webapp_section_8_center{
     display: none;
   }
-  .webapp_section_8_center1{
+  .WebDevelopment-benefits-center1{
     display: block;
   }
-  .webapp_section_8_layout .webapp_section_8_webdev {
+  .WebDevelopment-benefits-maindiv .WebDevelopment-benefits-webdev {
     font-size: 32px;
     font-weight: 600;
     line-height: 40px;
     font-family: sans-serif;
   }
-  .webapp_section_8_layout .webapp_section_8_webdevbenefits {
+  .WebDevelopment-benefits-maindiv .WebDevelopment-benefits-webdevbenefits {
     font-size: 30px;
     font-weight: 600;
   }
-  .webapp_section_8_webdev{
+  .WebDevelopment-benefits-webdev{
     font-size: 48px;
     font-weight: 700;
     line-height: 60.34px;
@@ -1943,10 +1944,10 @@
     color: #000000;
     position: relative;
   }
-  .webapp_section_8_webdevbenefits::after {
+  .WebDevelopment-benefits-webdevbenefits::after {
     width: 0px;
   }
-  .webapp_section_8_webdevbenefits{
+  .WebDevelopment-benefits-webdevbenefits{
     font-size: 48px;
     font-weight: 700;
     line-height: 60.34px;
@@ -1957,19 +1958,19 @@
     display: inline;
     width: 28px;
   }
-  .webapp_section_8_layout .webapp_section_8_image {
+  .WebDevelopment-benefits-maindiv .webapp_section_8_image {
     display: none;
   }
-  .webapp_section_8_image1{
+  .WebDevelopment-benefits-image1{
     display: block;
     height: auto;
     width: 100%;
     padding: 30px !important;
   }
-  .webapp_section_8_right{
+  .WebDevelopment-benefit-right{
     margin-top: 0px;
   }
-  .webapp_section_8_leftsideheading{
+  .WebDevelopment-benefit-leftsideheading{
     font-size: 16px !important;
 
   }
@@ -1978,7 +1979,7 @@
     margin-bottom: 5px;
   }
   
-  .webapp_section_8_leftsidepara{
+  .WebDevelopment-benefit-leftsidepara{
     font-size: 14px !important;
   }
 }
@@ -1986,7 +1987,7 @@
 
 /*section 9=====================================================================*/
 
-.about_session11_maindiv{
+.industry-served-maindiv{
   margin-top: 108px;
 }
 .mobile_session_row{
@@ -2067,7 +2068,7 @@
     width: 100% !important;
   }
   @media only screen and (max-width: 768px){
-    .about_session11_maindiv{
+    .industry-served-maindiv{
       margin-top: 0;
     }
     .mobile_session_row  h1{
@@ -2150,18 +2151,18 @@
 
   /*section10===================================================*/
 
-  .section10backgroundimage{
+  .our-testimonial-maindiv{
     background: rgba(35, 137, 156, 0.05);
     width: 100%;
     margin-top: 108px;
     height: 560px;
   }
-  .section10heading{
+  .our-testimonial-heading{
     width: 100%;
     height: auto;
     margin-top: 50px;
   }
-  .section10testimonial{
+  .our-testimonial-header{
     width: 100%;
     font-family: 'Source Sans Pro',sans-serif;
     font-size: 48px;
@@ -2170,7 +2171,7 @@
     text-align: left;
     color: rgba(0, 0, 0, 1);
   }
-  .section10testimonial span{
+  .our-testimonial-header span{
     font-family: 'Source Sans Pro',sans-serif;
     font-size: 48px;
     font-weight: 700;
@@ -2178,7 +2179,7 @@
     text-align: left;
     color: rgba(44, 160, 104, 1);
   }
-  .section10testimonial img{
+  .our-testimonial-header img{
     width: 54px;
     height: 3px;
     gap: 0px;
@@ -2290,7 +2291,7 @@
   opacity: 0px;
 }
 .dot-indicator.active {
-  background-color: green !important;
+  background-color: #2CA068 !important;
   width: 24px !important;
   height: 8px;
   gap: 0px;
@@ -2301,18 +2302,18 @@
   padding: 10px;
 }
   @media only screen and (max-width: 768px){
-    .section10backgroundimage{
+    .our-testimonial-maindiv{
       margin-top: 0;
       width: 100%;
       height: 480px ;
     }
    
-    .section10heading{
+    .our-testimonial-heading{
       width: 100%;
       height: auto;
       margin-top: 40px;
     }
-    .section10testimonial{
+    .our-testimonial-header{
       width: 100%;
       font-family: 'Source Sans Pro',sans-serif;
       font-size: 32px;
@@ -2322,14 +2323,14 @@
       margin-top: 0;
       margin-bottom: 20px;
     }
-    .section10testimonial span{
+    .our-testimonial-header span{
       font-family: 'Source Sans Pro',sans-serif;
       font-size: 32px;
       font-weight: 700;
       line-height: 40.22px;
       text-align: left;
     }
-    .section10testimonial img{
+    .our-testimonial-header img{
       width: 20px;
     }
     .carousel-indicators-row{
@@ -2399,7 +2400,7 @@
   .group68{
     margin-left: 20px;
   }
-  .section10backgroundimage{
+  .our-testimonial-maindiv{
     height: 495px !important;
   }
   
@@ -2421,7 +2422,7 @@
   
   /*section 12==================================================*/
 
-  .about_session10_maindiv{
+  .newsand-blocks-maindiv{
     margin-top: 108px;
   }
   .footer {
@@ -2429,7 +2430,7 @@
     padding: 10px;
     margin-top: 50px;
   }
-  .about_session10_para1 {
+  .newsand-blocks-para1 {
     font-family: 'Source Sans Pro',sans-serif;
     font-size: 48px;
     font-weight: 600;
@@ -2439,7 +2440,7 @@
     margin-top: 50px;
   }
 
-  .about_session10_para1 img{
+  .newsand-blocks-para1 img{
     width: 54px;
     height: 3px;
     gap: 0px;
@@ -2587,7 +2588,7 @@
   
   
   @media only screen and (max-width: 768px) {
-    .about_session10_para1 {
+    .newsand-blocks-para1 {
       width: 100%;
       font-size: 32px;
       text-align: left;
@@ -2621,7 +2622,7 @@
       height: 60px;
       width: 60px;
     }
-    .about_session10_para1 img{
+    .newsand-blocks-para1 img{
       width: 28px;
       height: 3px;
       gap: 0px;
@@ -3997,6 +3998,9 @@
         line-height: 22px;
         width: 100%;
         background-color: #2CA068;
+      }
+      .form-paragraph{
+        font-size: 14px;
       }
     
       .form-point {
